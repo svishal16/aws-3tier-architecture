@@ -8,11 +8,8 @@
 
 - **Database Server**: This is the back-end part that stores all the data for the application. It uses databases like MySQL or PostgreSQL to keep track of information.
 
-Looking for more videos on AWS and DevOps follow me on youtube here [![YouTube Channel](https://img.shields.io/badge/YouTube-Channel-red?logo=youtube&style=flat-square)](https://www.youtube.com/@avizway)
 
 
-
-![Three-Tier Architecture](https://avinash.s3.amazonaws.com/3tier.png)
 
 
 ### Overview
@@ -85,14 +82,14 @@ In this architecture, we have three main layers:
 #### AWS Certificate Manager (ACM)
 - **Purpose**: Manages SSL/TLS certificates to secure data in transit between clients and your application, ensuring encrypted communication.
 - **Implementation**:
-  - **Certificate Provisioning**: ACM provides and manages SSL/TLS certificates for your domain `learnaws.co.in`.
+  - **Certificate Provisioning**: ACM provides and manages SSL/TLS certificates for your domain `svishal.xyz`.
   - **Certificate Deployment**: The ACM certificates are associated with the public-facing Application Load Balancer (ALB) to enable HTTPS traffic.
   - **Automatic Renewal**: ACM automatically renews certificates before they expire, ensuring uninterrupted secure connections.
 
 #### Amazon Route 53
 - **Purpose**: Manages DNS records and directs user traffic to the appropriate AWS resources, optimizing for performance and reliability.
 - **Implementation**:
-  - **DNS Management**: Route 53 handles DNS queries for the domain `learnaws.co.in`, translating it into IP addresses for your Application Load Balancer.
+  - **DNS Management**: Route 53 handles DNS queries for the domain `svishal.xyz`, translating it into IP addresses for your Application Load Balancer.
   - **Traffic Routing**: Route 53 directs client requests to the public-facing Application Load Balancer based on DNS records.
   - **Health Checks and Failover**: Optionally, Route 53 performs health checks on your endpoints and can automatically reroute traffic to healthy resources if needed.
 
